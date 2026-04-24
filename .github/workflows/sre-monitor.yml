@@ -16,7 +16,7 @@ jobs:
       - name: Simulate system metrics
         id: metrics
         run: |
-          ERROR_RATE=$((RANDOM % 20))
+          ERROR_RATE=15
           echo "Error Rate is $ERROR_RATE"
           echo "error_rate=$ERROR_RATE" >> $GITHUB_OUTPUT
 
