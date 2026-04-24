@@ -17,6 +17,7 @@ jobs:
         id: metrics
         run: |
           ERROR_RATE=$((RANDOM % 20))
+          echo "Error Rate is $ERROR_RATE"
           echo "error_rate=$ERROR_RATE" >> $GITHUB_OUTPUT
 
       - name: Detect Incident
