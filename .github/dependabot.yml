@@ -4,3 +4,11 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+
+    groups:
+      framework-updates:
+        patterns:
+          - "express"
+          - "@azure/*"
+
+    open-pull-requests-limit: 5
